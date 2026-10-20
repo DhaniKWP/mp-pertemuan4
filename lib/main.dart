@@ -12,9 +12,9 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       title: "Belajar Flutter",
-      home: MyHome(),
+      home: ProfilePage(),
       theme: ThemeData(useMaterial3: true,
-      colorScheme: ColorScheme.dark()),
+      colorScheme: ColorScheme.fromSeed(seedColor: Colors.orange)),
     );
   }
 }
@@ -35,4 +35,19 @@ class MyHome extends StatelessWidget {
   }
 }
 
+class ProfilePage extends StatelessWidget {
+  const ProfilePage({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+          title: const Center(
+              child: Text("Dashboard mahasiswa"))),
+      body: const Center(
+          child: Text("Dhani Kusuma Wardana Putra - 1124160014")
+      ),
+    );
+  }
+}
 
