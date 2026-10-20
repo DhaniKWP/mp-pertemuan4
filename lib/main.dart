@@ -11,7 +11,10 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      title: "Dhani Kusuma Wardana Putra",
+      title: "Belajar Flutter",
+      home: MyHome(),
+      theme: ThemeData(useMaterial3: true,
+      colorScheme: ColorScheme.fromSeed(seedColor: Colors.yellow)),
     );
   }
 }
