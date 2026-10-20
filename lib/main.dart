@@ -14,7 +14,7 @@ class MyApp extends StatelessWidget {
       title: "Belajar Flutter",
       home: MyHome(),
       theme: ThemeData(useMaterial3: true,
-      colorScheme: ColorScheme.fromSeed(seedColor: Colors.yellow)),
+      colorScheme: ColorScheme.dark()),
     );
   }
 }
