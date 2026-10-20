@@ -19,4 +19,20 @@ class MyApp extends StatelessWidget {
   }
 }
 
+class MyHome extends StatelessWidget {
+  const MyHome({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        title: const Center(
+          child: Text("Dashboard mahasiswa"))),
+      body: const Center(
+        child: Text("Hello mahasiswa")
+      ),
+    );
+  }
+}
+
 
